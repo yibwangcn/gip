@@ -1,0 +1,42 @@
+BasedOnStyle: Google  # The style used for all options not specifically set in the configuration.
+Language: Cpp
+IndentWidth: 4 # The number of columns to use for indentation
+ContinuationIndentWidth: 4   # Indent width for line continuations
+KeepEmptyLinesAtTheStartOfBlocks: false # Do not keep empty line at the start of blocks
+BreakConstructorInitializers: BeforeComma # Break constructor initializers before the colon and commas, and align the commas with the colon
+FixNamespaceComments: true # If true adds missing namespace end comments for short namespaces and fixes invalid existing ones
+SpacesBeforeTrailingComments: 2 # The number of spaces before trailing line comments
+NamespaceIndentation: None # Don’t indent in namespaces
+SpaceBeforeParens: ControlStatements # Put a space before opening parentheses only after control statement keywords (for/if/while...).
+UseTab: Never # Never use tab
+SortIncludes: false   # Not sort include statement
+MaxEmptyLinesToKeep: 1 # The maximum number of consecutive empty lines to keep.
+PenaltyIndentedWhitespace: 4  # Penalty for each character of whitespace indentation (counted relative to leading non-whitespace column)
+AlwaysBreakBeforeMultilineStrings: true  # If true, always break before multiline string literals
+AccessModifierOffset: -4  # The extra indent or outdent of access modifiers, e.g. public:
+PenaltyBreakFirstLessLess: 2  # The penalty for breaking before the first <<
+AlignOperands: DontAlign  # Do not align operands of binary and ternary expressions.
+AlignAfterOpenBracket: DontAlign  # Do not align arguments after an open bracket.
+AllowShortBlocksOnASingleLine: Never  # Do not put "while (true) { continue; }" on a single line
+AllowShortFunctionsOnASingleLine: None  # Do not put "int f() { return 0; } " on a single line
+AllowShortIfStatementsOnASingleLine: Never  # Do not put "if (a) return;" on a single line
+AllowShortLoopsOnASingleLine: false  # Do not put "while (true) continue;" on a single line.
+AllowShortLambdasOnASingleLine: None  # Do not put "auto lambda []() { return 0; } can be put on a single line." on a single line
+BinPackArguments: true  # If false, a function call’s arguments will either be all on the same line or will have one line each.
+BinPackParameters: true  # If false, a function declaration’s or function definition’s parameters will either all be on the same line or will have one line each.
+BreakBeforeBraces: Allman  # always break before braces {
+ColumnLimit: 120  # line width
+ConstructorInitializerIndentWidth: 4  # The number of characters to use for indentation of constructor initializer lists as well as inheritance lists.
+Cpp11BracedListStyle: false  #  If true, format braced lists as best suited for C++11 braced lists.
+IndentCaseLabels: true  # Indent case labels one level from the switch statement
+PointerAlignment: Left  #  Align pointer to the left, like int* a;
+SpaceAfterCStyleCast: false  # If true, a space is inserted after C style casts.
+SpaceBeforeAssignmentOperators: true  # If false, spaces will be removed before assignment operators.
+SpaceInEmptyParentheses: false  # If true, spaces may be inserted into ().
+SpacesInAngles: false  # Remove spaces after < and before >
+SpacesInCStyleCastParentheses: false  # If true, spaces may be inserted into C style casts.
+SpacesInParentheses: false  # If true, spaces will be inserted after ( and before ).
+SpacesInSquareBrackets: false  # If true, spaces will be inserted after [ and before ]. Lambdas without arguments or unspecified size array declarations will not be affected.
+Standard: c++14  # Parse and format as C++14
+TabWidth: 4  # The number of columns used for tab stops.
+#DisableFormat: true
